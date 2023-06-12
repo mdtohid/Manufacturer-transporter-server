@@ -47,7 +47,7 @@ async function run() {
             const email = req.params.email;
             const query = { email : email };
             const data = await userInfo.findOne(query);
-            console.log(data);
+            // console.log(data);
             res.send(data);
         })
 
